@@ -57,6 +57,7 @@ public class Application {
 		
 ///*		
 		// section 4: test bean life cycle
+		// also notice I add a property in the bean tag configured inside applicationContext2.xml file, lazy-init = " true"
 		System.out.println(1);
 		ApplicationContext context = ApplicationContextUtil.get();
 		System.out.println(2);
