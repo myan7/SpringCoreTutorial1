@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- This works like a container, you can configure the bean here e.g. -->
+<bean id	="myService" class="com.bean.UserService" >  <!-- id has to be your instance's name, class should be the full path of your class -->
+		<property name="name">
+			<value>Ming</value>
+		</property>
+</bean>
+<!-- purpose of bean tag: when the spring framework is loaded, it will create an object like this:
+		UserService myService = new UserService();
+		myService.setName = "Ming";  the setName() is mandatory is because spring need it to pass name value into the object.
+, and place that object in the memory.  -->
+
+
+<bean id="byeService" class="com.bean.ByeService">
+	<property name="name" value="Shit"/>
+</bean>
+
+
+</beans>

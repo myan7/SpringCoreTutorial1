@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- This works like a container, you can configure the bean here e.g. -->
+<bean id	="myService" class="com.bean.UserService" init-method = "init" destroy-method = "destroy">  <!-- id has to be your instance's name, class should be the full path of your class -->
+		<property name="name">
+			<value>Ming</value>
+		</property>
+		<!-- inject ByeService in UserService -->
+		<!-- instead of using the value attribute, you need to use the ref, because it is a reference data type. -->
+		<!-- and the ref="" asks for the instance with the same name you passed in -->
+		<property name ="bye" ref="byeService"/> 
+		<!-- this is how Spring maintains the relationship between beans -->
+</bean>
+
+<bean id="byeService" class="com.bean.ByeService">
+	<property name="name" value="Shit"/>
+</bean> 
+
+
+</beans>
