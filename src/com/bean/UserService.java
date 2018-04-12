@@ -66,14 +66,14 @@ public class UserService {
 		bye.sayBye();  // if you want to call this function you need to inject it first.
 	}
 	
-//	public void init()
-//	{
-//		System.out.println("Bean get initialized.");
-//	}
-//	public void destroy()
-//	{
-//		System.out.println("Bean will be destroyed.");
-//	}
+	public void init()
+	{
+		System.out.println("Bean get initialized.");
+	}
+	public void destroy()
+	{
+		System.out.println("Bean will be destroyed.");
+	}
 //	 */
 	
 }

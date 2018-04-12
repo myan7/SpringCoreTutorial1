@@ -11,7 +11,7 @@ public class ApplicationContextUtil {
 			
 		}
 		static {
-			ac = new ClassPathXmlApplicationContext("applicationContext.xml"); 
+			ac = new ClassPathXmlApplicationContext("applicationContext2.xml"); 
 		}
 		
 		public static ApplicationContext get()

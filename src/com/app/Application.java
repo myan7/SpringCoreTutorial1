@@ -41,12 +41,12 @@ public class Application {
 		byeService.sayBye();
 */
 		
-///* Section 2 
+/* Section 2 
   		//to demostrate the realtionship between beans
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext2.xml");
 		UserService myService = (UserService) ac.getBean("myService");
 		myService.sayHello();
-//*/
+*/
 		
 	
 //		Section 3: Because applicationContext works like a container, who contains all the objects in the xml, 
@@ -55,15 +55,21 @@ public class Application {
 //		https://stackoverflow.com/questions/29862681/java-spring-multiple-applicationcontext
 //		((UserService)ApplicationContextUtil.get().getBean("myService")).sayHello();
 		
-/*		
+///*		
 		// section 4: test bean life cycle
+		System.out.println(1);
 		ApplicationContext context = ApplicationContextUtil.get();
-		((AbstractApplicationContext) context).registerShutdownHook();// this registerShutdownHook method will close the context after bean's task. 
+		System.out.println(2);
+		((AbstractApplicationContext) context).registerShutdownHook();
+				// this registerShutdownHook() method will close the context after bean's task. 
+		System.out.println(3);
 		UserService userService = context.getBean("myService", UserService.class);
+		System.out.println(4);
 		userService.sayHello();
+		System.out.println(5);
 		
 //		((AbstractApplicationContext) context).close();
-*/	
+//*/	
 	}
 
 		
