@@ -13,9 +13,9 @@ public class Application {
 	public static void main(String[] args) {
 ///* Section 1
 		// use the traditional way to invoke the sayHello()
-		UserService us = new UserService();
-		us.setName("Ming");
-		us.sayHello();
+//		UserService us = new UserService();
+//		us.setName("Ming");
+//		us.sayHello();
 		
 		
 //		By using Spring framework, I don't need to create new instance anymore
@@ -34,11 +34,11 @@ public class Application {
 //				by calling the getBean(), which belongs to BeanFactory, which is also an interface.
 //				return type: java.lang.Object	getBean(java.lang.String name)
 //				method description: Return an instance, which may be shared or independent, of the specified bean.
-//		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
-//		UserService myService = (UserService) ac.getBean("myService");
-//		myService.sayHello();
-//		ByeService byeService = ac.getBean("byeService", ByeService.class);
-//		byeService.sayBye();
+		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+		UserService myService = (UserService) ac.getBean("myService");
+		myService.sayHello();
+		ByeService byeService = ac.getBean("byeService", ByeService.class);
+		byeService.sayBye();
 //*/
 		
 /* Section 2 
