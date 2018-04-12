@@ -6,7 +6,7 @@
 
 
 <!-- This works like a container, you can configure the bean here e.g. -->
-<bean id	="myService" class="com.bean.UserService" init-method = "init" destroy-method = "destroy">  <!-- id has to be your instance's name, class should be the full path of your class -->
+<bean id	="myService" class="com.bean.UserService" >  <!-- id has to be your instance's name, class should be the full path of your class -->
 		<property name="name">
 			<value>Ming</value>
 		</property>

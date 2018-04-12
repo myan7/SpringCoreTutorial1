@@ -1,7 +1,7 @@
 package com.bean;
 
 public class UserService {
-	///* Section 1
+	/* Section 1
 	private String name;
 
 	
@@ -27,10 +27,9 @@ public class UserService {
 		System.out.println("Hello "+name);
 	}
 	
-	//Section1 ends*/
+	Section1 ends*/
 	
-	/*
-	 * the following sections
+	///*the following sections
 	
 	private String name;
 	private ByeService bye;
@@ -67,14 +66,14 @@ public class UserService {
 		bye.sayBye();  // if you want to call this function you need to inject it first.
 	}
 	
-	public void init()
-	{
-		System.out.println("Bean get initialized.");
-	}
-	public void destroy()
-	{
-		System.out.println("Bean will be destroyed.");
-	}
-	 */
+//	public void init()
+//	{
+//		System.out.println("Bean get initialized.");
+//	}
+//	public void destroy()
+//	{
+//		System.out.println("Bean will be destroyed.");
+//	}
+//	 */
 	
 }

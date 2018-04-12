@@ -11,7 +11,7 @@ import com.util.ApplicationContextUtil;
 public class Application {
 
 	public static void main(String[] args) {
-///* Section 1
+/* Section 1
 		// use the traditional way to invoke the sayHello()
 //		UserService us = new UserService();
 //		us.setName("Ming");
@@ -39,14 +39,14 @@ public class Application {
 		myService.sayHello();
 		ByeService byeService = ac.getBean("byeService", ByeService.class);
 		byeService.sayBye();
-//*/
+*/
 		
-/* Section 2 
- * 		to demostrate the realtionship between beans
+///* Section 2 
+  		//to demostrate the realtionship between beans
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext2.xml");
 		UserService myService = (UserService) ac.getBean("myService");
 		myService.sayHello();
-*/
+//*/
 		
 	
 //		Section 3: Because applicationContext works like a container, who contains all the objects in the xml, 
